@@ -1,0 +1,1 @@
+Este proyecto es una tienda en línea dedicada a los productos oficiales de Mr. Beast, construida con un enfoque en una experiencia de usuario atractiva y moderna. Utilizamos HTML5, CSS3, Bootstrap y JavaScript para el frontend, asegurando un diseño responsive, dinámico y visualmente impactante.
