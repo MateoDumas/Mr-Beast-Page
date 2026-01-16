@@ -5,6 +5,12 @@ body {
     background-color: #f0f0f0;
 }
 
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 header {
     background-color: #00bfff;
     color: white;
@@ -381,7 +387,8 @@ h1 {
 }
 /* Animación de giro en el botón de "Más información" */
 .btn-primary:hover {
-    animation: spin 1s ease infinite;
+    transform: scale(1.03);
+    transition: transform 0.2s ease;
 }
 
 @keyframes spin {
@@ -457,4 +464,42 @@ button[type="submit"]:hover {
     background-color: rgb(0, 0, 0);
     padding: 5px;
     color: #00000000;
+}
+
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .producto,
+    .articulo,
+    .video,
+    .recomendacion,
+    .tutorial,
+    .recurso {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .videos-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recomendaciones-grid,
+    .articulos-grid,
+    .tutoriales-grid,
+    .recursos-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video iframe {
+        height: 200px;
+    }
+
+    .carousel-item img {
+        height: 30vh;
+    }
 }

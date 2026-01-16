@@ -7,16 +7,15 @@
     <title>Tienda de Mr. Beast</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
+&#10;</head>
+&#10;<body>
     <!-- Encabezado -->
     <header>
         <div class="logo">
             <img src="https://logos-marcas.com/wp-content/uploads/2021/09/MrBeast-Logo.png" alt="Mr. Beast Logo">
             <h1>¡La mejor tienda de Mr. Beast!</h1>
         </div>
-        <nav>
+        <nav aria-label="Navegación principal">
             <ul>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#biografia">Biografía</a></li>
@@ -28,8 +27,9 @@
             </ul>
         </nav>
     </header>
-    <!-- Carrusel de Productos -->
-    <section id="productos" class="productos-destacados">
+    <main>
+        <!-- Carrusel de Productos -->
+        <section id="productos" class="productos-destacados">
         <h2>Productos Destacados</h2>
         <div class="productos-grid">
             <div id="carouselProductos" class="carousel slide" data-ride="carousel">
@@ -84,8 +84,8 @@
                             <img src="https://images-na.ssl-images-amazon.com/images/I/51wUsoZnwfL._AC_UL1000_.jpg"
                                 class="d-block w-100" alt="Producto 5">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5< /h5>
-                                    <p></p>
+                                <h5></h5>
+                                <p></p>
                             </div>
                         </div>
                     </div>
@@ -99,8 +99,10 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <!-- Sección de biografía -->
-            <section id="biografia" class="biografia">
+        </div>
+    </section>
+    <!-- Sección de biografía -->
+    <section id="biografia" class="biografia">
                 <h2>Sobre Mr. Beast</h2>
                 <p>Mr. Beast, cuyo nombre real es Jimmy Donaldson, es un fenómeno de las redes sociales, empresario y
                     filántropo estadounidense nacido el 7 de mayo de 1998 en Greenville, Carolina del Norte. Desde una
@@ -276,9 +278,9 @@
                                 <div class="modal-body">
                                     <div class="col-md">
                                         <div class="form-floating">
-                                            <label for="floatingSelectGrid">¡Unite al programa de afiliados de Mr
+                                            <label for="metodoPagoAfiliados">¡Unite al programa de afiliados de Mr
                                                 Beast!</label>
-                                            <select class="form-select" id="floatingSelectGrid">
+                                            <select class="form-select" id="metodoPagoAfiliados">
                                                 <option selected>Selecciona tu metodo de pago</option>
                                                 <option value="1">transferencia</option>
                                                 <option value="2">Efectivo</option>
@@ -441,7 +443,7 @@
             <section id="recomendaciones" class="recomendaciones">
                 <h2>Recomendaciones para Ti</h2>
                 <div class="recomendaciones-grid">
-                    <!-- Recomendación 1 -->
+                        <!-- Recomendación 1 -->
                     <div class="recomendacion">
                         <img src="https://http2.mlstatic.com/D_NQ_NP_712160-MLA53046510631_122022-O.webp"
                             alt="Recomendación 1">
@@ -465,7 +467,7 @@
 
                                     <!-- Modal body -->
                                     <div class="modal-body">
-                                        <select class="form-select" id="floatingSelectGrid">
+                                        <select class="form-select" id="metodoPagoArticulo1">
                                             <option selected>Selecciona tu metodo de pago</option>
                                             <option value="1">transferencia</option>
                                             <option value="2">Efectivo</option>
@@ -483,19 +485,19 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Recomendación 2 -->
+                        <!-- Recomendación 2 -->
                     <div class="recomendacion">
                         <img src="https://images-na.ssl-images-amazon.com/images/I/51wUsoZnwfL._AC_UL1000_.jpg"
                             alt="Recomendación 2">
                         <h3>Recomendación 2</h3>
                         <p>Producto recomendado basado en tus intereses...</p>
-                         <!-- Button to Open the Modal -->
-                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Articulo1">
+                        <!-- Button to Open the Modal -->
+                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Articulo2">
                             Comprar Ahora
                         </button>
 
                         <!-- The Modal -->
-                        <div class="modal" id="Articulo1">
+                        <div class="modal" id="Articulo2">
                             <div class="modal-dialog">
                                 <div class="modal-content">
 
@@ -543,9 +545,9 @@
                             <div class="modal-body">
                                 <div class="col-md">
                                     <div class="form-floating">
-                                        <label for="floatingSelectGrid">¡Dona a las causas beneficas que ayuda mr
+                                        <label for="metodoDonacion">¡Dona a las causas beneficas que ayuda mr
                                             beast!</label>
-                                        <select class="form-select" id="floatingSelectGrid">
+                                        <select class="form-select" id="metodoDonacion">
                                             <option selected>Selecciona tu metodo para donar</option>
                                             <option value="1">transferencia</option>
                                             <option value="2">Efectivo</option>
@@ -567,23 +569,23 @@
             </section>
 
             <!-- Sección de redes sociales en tiempo real -->
-            <section id="social" class="social">
+            <section id="social" class="social" aria-label="Redes sociales oficiales de Mr. Beast">
                 <h2>Redes Sociales en Tiempo Real</h2>
                 <div id="social-feed">
                     <!-- Aquí se mostrarán las publicaciones en tiempo real -->
-                    <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15" aria-hidden="true">
                             <path fill="#E4405F"
                                 d="M465.1 0H46.9C21 0 0 21 0 46.9v418.2C0 491 21 512 46.9 512h418.2c25.9 0 46.9-21 46.9-46.9V46.9C512 21 491 0 465.1 0zM256 391.7c-73.7 0-133.7-60-133.7-133.7s60-133.7 133.7-133.7 133.7 60 133.7 133.7-60 133.7-133.7 133.7zm0-230c-50.4 0-91.3 40.9-91.3 91.3s40.9 91.3 91.3 91.3 91.3-40.9 91.3-91.3-40.9-91.3-91.3-91.3zM389.3 512H122.7c-20.8 0-37.7-16.9-37.7-37.7V208.4h56.5c-4.4 15.9-6.7 32.7-6.7 50 0 82.1 66.7 148.8 148.8 148.8s148.8-66.7 148.8-148.8c0-17.3-2.3-34.1-6.7-50h56.5v265.9c0 20.8-16.9 37.7-37.8 37.7z" />
                         </svg>
                         <a href="https://www.instagram.com/MrBeast/" target="_blank">Instagram</a>
                     </p>
-                    <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15" aria-hidden="true">
                             <path fill="#FF0000"
                                 d="M472.7 121.1c-5.5-20.7-20.7-36.1-41.4-41.4C397.7 64 256 64 256 64s-141.7 0-175.3 15.7c-20.7 5.5-36.1 20.7-41.4 41.4C32 154.7 32 256 32 256s0 101.3 15.7 134.9c5.5 20.7 20.7 36.1 41.4 41.4C114.7 448 256 448 256 448s141.7 0 175.3-15.7c20.7-5.5 36.1-20.7 41.4-41.4C480 357.3 480 256 480 256s0-101.3-15.3-134.9zm-280.7 180V210.8l146.9 75.2-146.9 74.9z" />
                         </svg>
                         <a href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA" target="_blank">YouTube</a>
                     </p>
-                    <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15" aria-hidden="true">
                             <path fill="#1877F2"
                                 d="M444.7 0H67.3C30.2 0 0 30.2 0 67.3v377.3C0 481.8 30.2 512 67.3 512h161.5V313.7h-69.3v-80.9h69.3v-60.6c0-70.8 43.3-109.5 106.2-109.5 30 0 56 2.3 63.5 3.3v73h-43.5c-34 0-40.7 16.2-40.7 39.9v52.3h81.3l-10.6 80.9h-70.7V512h138.7c37.1 0 67.3-30.2 67.3-67.3V67.3C512 30.2 481.8 0 444.7 0z" />
                         </svg>
@@ -613,8 +615,9 @@
                     <p>Teléfono: +1 234 567 890</p>
                 </div>
             </section>
-            <!-- Pie de página -->
-            <footer class="container-fluid">
+        </main>
+        <!-- Pie de página -->
+        <footer class="container-fluid">
                 <nav>
                     <ul>
                         <li><a href="#">Política de privacidad</a></li>
@@ -623,14 +626,11 @@
                     </ul>
                 </nav>
                 <p>&copy; 2024 Mr. Beast Shop. Todos los derechos reservados.</p>
-            </footer>
+        </footer>
 
-            <script src="scripts.js"></script>
-
-
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
