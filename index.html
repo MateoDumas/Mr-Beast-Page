@@ -4,154 +4,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Mr. Beast</title>
+    <title>Tributo a MrBeast</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-&#10;</head>
-&#10;<body>
+    &#10;
+</head>
+&#10;
+
+<body>
     <!-- Encabezado -->
     <header>
         <div class="logo">
-            <img src="https://logos-marcas.com/wp-content/uploads/2021/09/MrBeast-Logo.png" alt="Mr. Beast Logo">
-            <h1>¡La mejor tienda de Mr. Beast!</h1>
+            <img src="https://logos-marcas.com/wp-content/uploads/2021/09/MrBeast-Logo.png" alt="Logo de MrBeast">
+            <h1>Tributo a MrBeast</h1>
         </div>
         <nav aria-label="Navegación principal">
             <ul>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#biografia">Biografía</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#productos">Merch</a></li>
+                <li><a href="#biografia">Historia</a></li>
+                <li><a href="#impacto">Impacto</a></li>
                 <li><a href="#videos">Videos</a></li>
-                <li><a href="#afiliados">Afiliados</a></li>
-                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#donaciones">Donar</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
+        <button id="themeToggle" class="theme-toggle" type="button">Modo oscuro</button>
     </header>
     <main>
-        <!-- Carrusel de Productos -->
-        <section id="productos" class="productos-destacados">
-        <h2>Productos Destacados</h2>
-        <div class="productos-grid">
-            <div id="carouselProductos" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <!-- Slide 1 -->
-                    <div class="carousel-item active">
-                        <div class="d-block w-100">
-                            <img src="https://http2.mlstatic.com/D_NQ_NP_906313-MLM72186299945_102023-O.webp"
-                                class="d-block w-100" alt="Producto 1">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5></h5>
-                                <p></p>
-                            </div>
-                        </div>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h2>Videos extremos, retos imposibles e impacto real</h2>
+                <p>Este sitio celebra la creatividad, la locura y la generosidad de uno de los creadores más influyentes del mundo.</p>
+                <div class="hero-actions">
+                    <a href="#videos" class="btn-cta">Ver videos épicos</a>
+                    <a href="#impacto" class="btn-ghost">Conocer su impacto</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="250">0</span>
+                        <span class="stat-label">millones de suscriptores</span>
                     </div>
-                    <!-- Slide 2 -->
-                    <div class="carousel-item">
-                        <div class="d-block w-100">
-                            <img src="https://th.bing.com/th/id/OIP.5AzErkIUtPsviij3UqV5wAHaHa?rs=1&pid=ImgDetMain"
-                                class="d-block w-100" alt="Producto 2">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5></h5>
-                                <p></p>
-                            </div>
-                        </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="500">0</span>
+                        <span class="stat-label">videos llenos de locura</span>
                     </div>
-                    <!-- Slide 3 -->
-                    <div class="carousel-item">
-                        <div class="d-block w-100">
-                            <img src="https://th.bing.com/th/id/OIP.6sAgG2Yhxfjc4NYKhWcIKQHaHa?rs=1&pid=ImgDetMain"
-                                class="d-block w-100" alt="Producto 3">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5></h5>
-                                <p></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 4 -->
-                    <div class="carousel-item">
-                        <div class="d-block w-100">
-                            <img src="https://http2.mlstatic.com/D_NQ_NP_712160-MLA53046510631_122022-O.webp"
-                                class="d-block w-100" alt="Producto 4">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5></h5>
-                                <p></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 5 -->
-                    <div class="carousel-item">
-                        <div class="d-block w-100">
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/51wUsoZnwfL._AC_UL1000_.jpg"
-                                class="d-block w-100" alt="Producto 5">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5></h5>
-                                <p></p>
-                            </div>
-                        </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">millones donados en desafíos</span>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselProductos" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselProductos" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
-        </div>
-    </section>
-    <!-- Sección de biografía -->
-    <section id="biografia" class="biografia">
-                <h2>Sobre Mr. Beast</h2>
-                <p>Mr. Beast, cuyo nombre real es Jimmy Donaldson, es un fenómeno de las redes sociales, empresario y
-                    filántropo estadounidense nacido el 7 de mayo de 1998 en Greenville, Carolina del Norte. Desde una
-                    edad temprana, mostró una inclinación hacia la innovación y el emprendimiento, que se manifestó en
-                    su apasionada búsqueda por destacarse en el mundo digital.
+            <div class="hero-media">
+                <iframe src="https://www.youtube.com/embed/F6PqxbvOCUI" title="MrBeast video destacado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="productos" class="productos-destacados">
+            <h2>Productos Destacados</h2>
+            <div class="productos-grid">
+                <div id="carouselProductos" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="d-block w-100">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_906313-MLM72186299945_102023-O.webp"
+                                    class="d-block w-100" alt="Producto 1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5></h5>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="d-block w-100">
+                                <img src="https://th.bing.com/th/id/OIP.5AzErkIUtPsviij3UqV5wAHaHa?rs=1&pid=ImgDetMain"
+                                    class="d-block w-100" alt="Producto 2">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5></h5>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <div class="d-block w-100">
+                                <img src="https://th.bing.com/th/id/OIP.6sAgG2Yhxfjc4NYKhWcIKQHaHa?rs=1&pid=ImgDetMain"
+                                    class="d-block w-100" alt="Producto 3">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5></h5>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="carousel-item">
+                            <div class="d-block w-100">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_712160-MLA53046510631_122022-O.webp"
+                                    class="d-block w-100" alt="Producto 4">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5></h5>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 5 -->
+                        <div class="carousel-item">
+                            <div class="d-block w-100">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/51wUsoZnwfL._AC_UL1000_.jpg"
+                                    class="d-block w-100" alt="Producto 5">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5></h5>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselProductos" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselProductos" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de biografía -->
+        <section id="biografia" class="biografia">
+            <h2>Sobre Mr. Beast</h2>
+            <p>Mr. Beast, cuyo nombre real es Jimmy Donaldson, es un fenómeno de las redes sociales, empresario y
+                filántropo estadounidense nacido el 7 de mayo de 1998 en Greenville, Carolina del Norte. Desde una
+                edad temprana, mostró una inclinación hacia la innovación y el emprendimiento, que se manifestó en
+                su apasionada búsqueda por destacarse en el mundo digital.
 
-                    Su ascenso a la fama comenzó en 2012, cuando lanzó su canal de YouTube bajo el seudónimo "Mr.
-                    Beast". Al principio, su contenido consistía en videos de videojuegos, pero pronto evolucionó hacia
-                    desafíos y experimentos sociales únicos que captaron la atención de millones de espectadores en todo
-                    el mundo. Su enfoque poco convencional, combinado con su generosidad y sentido del humor, lo
-                    convirtió en un favorito instantáneo entre la comunidad de YouTube.
+                Su ascenso a la fama comenzó en 2012, cuando lanzó su canal de YouTube bajo el seudónimo "Mr.
+                Beast". Al principio, su contenido consistía en videos de videojuegos, pero pronto evolucionó hacia
+                desafíos y experimentos sociales únicos que captaron la atención de millones de espectadores en todo
+                el mundo. Su enfoque poco convencional, combinado con su generosidad y sentido del humor, lo
+                convirtió en un favorito instantáneo entre la comunidad de YouTube.
 
-                    Lo que realmente distingue a Mr. Beast es su capacidad para pensar en grande y su deseo de hacer el
-                    bien. A lo largo de los años, ha llevado a cabo una serie de hazañas extraordinarias, desde donar
-                    miles de dólares a extraños hasta regalar automóviles, casas e incluso islas. Su filantropía no
-                    conoce límites, y ha redefinido lo que significa ser un creador de contenido, utilizando su
-                    plataforma para hacer del mundo un lugar mejor.
+                Lo que realmente distingue a Mr. Beast es su capacidad para pensar en grande y su deseo de hacer el
+                bien. A lo largo de los años, ha llevado a cabo una serie de hazañas extraordinarias, desde donar
+                miles de dólares a extraños hasta regalar automóviles, casas e incluso islas. Su filantropía no
+                conoce límites, y ha redefinido lo que significa ser un creador de contenido, utilizando su
+                plataforma para hacer del mundo un lugar mejor.
 
-                    Pero Mr. Beast no se detiene ahí. También es un empresario visionario que ha fundado varias empresas
-                    exitosas, incluida la marca de ropa 'Beast Merch', que ha generado millones en ventas. Además, ha
-                    lanzado aplicaciones y empresas tecnológicas, siempre con el objetivo de innovar y crear impacto.
+                Pero Mr. Beast no se detiene ahí. También es un empresario visionario que ha fundado varias empresas
+                exitosas, incluida la marca de ropa 'Beast Merch', que ha generado millones en ventas. Además, ha
+                lanzado aplicaciones y empresas tecnológicas, siempre con el objetivo de innovar y crear impacto.
 
-                    A medida que su fama creció, también lo hizo su influencia. Mr. Beast se ha convertido en un modelo
-                    a seguir para una generación de jóvenes que aspiran a hacer una diferencia en el mundo mientras
-                    persiguen sus pasiones. Su mensaje de generosidad, trabajo duro y determinación resuena en millones
-                    de personas en todo el mundo.
+                A medida que su fama creció, también lo hizo su influencia. Mr. Beast se ha convertido en un modelo
+                a seguir para una generación de jóvenes que aspiran a hacer una diferencia en el mundo mientras
+                persiguen sus pasiones. Su mensaje de generosidad, trabajo duro y determinación resuena en millones
+                de personas en todo el mundo.
 
-                    Pero lo más notable de todo es que Mr. Beast no solo es un creador de contenido exitoso y un
-                    empresario astuto, sino también un ser humano genuinamente bueno y compasivo. Su capacidad para usar
-                    su influencia para el bien y su dedicación a ayudar a los demás lo convierten en una figura
-                    verdaderamente inspiradora en la era digital. Su historia continúa inspirando a muchos a creer en el
-                    poder del altruismo y el impacto positivo que cada uno puede tener en el mundo.</p>
-            </section>
+                Pero lo más notable de todo es que Mr. Beast no solo es un creador de contenido exitoso y un
+                empresario astuto, sino también un ser humano genuinamente bueno y compasivo. Su capacidad para usar
+                su influencia para el bien y su dedicación a ayudar a los demás lo convierten en una figura
+                verdaderamente inspiradora en la era digital. Su historia continúa inspirando a muchos a creer en el
+                poder del altruismo y el impacto positivo que cada uno puede tener en el mundo.</p>
+        </section>
 
-            <!-- Blog de noticias y actualizaciones -->
-            <section id="blog" class="blog">
-                <h2>Blog de Noticias y Actualizaciones</h2>
-                <div class="articulos-grid">
-                    <!-- Artículo 1 -->
-                    <article class="articulo">
-                        <h3>Noticia 1</h3>
-                        <p>Actualización sobre el nuevo producto...</p>
+        <!-- Blog de noticias y actualizaciones -->
+        <section id="blog" class="blog">
+            <h2>Blog de Noticias y Actualizaciones</h2>
+            <div class="articulos-grid">
+                <!-- Artículo 1 -->
+                <article class="articulo">
+                    <h3>Noticia 1</h3>
+                    <p>Actualización sobre el nuevo producto...</p>
+                    <!-- Button to Open the Modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Noticia1">
+                        leer mas
+                    </button>
+
+                    <!-- The Modal -->
+                    <div class="modal" id="Noticia1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Modal Heading</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    MrBeast ha lanzado recientemente varias novedades emocionantes relacionadas con
+                                    sus productos. Uno de los anuncios más destacados es la reformulación de sus
+                                    barras de chocolate Feastables. MrBeast afirmó que la nueva fórmula es "el
+                                    chocolate con mejor sabor jamás creado por la humanidad". Después de probar
+                                    cientos de recetas en diferentes fábricas de chocolate, finalmente encontró la
+                                    que considera perfecta. Ahora, Feastables ofrece siete sabores: Chocolate con
+                                    Leche, Crunch de Leche, Almendra, Mantequilla de Maní, Crunch de Mantequilla de
+                                    Maní, Chocolate Oscuro y Chocolate Oscuro con Sal Marina. Además, está llevando
+                                    a cabo una promoción donde regala $10,000 diarios a los compradores que escaneen
+                                    el código QR en las envolturas de Feastables​
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Artículo 2 -->
+                <article class="articulo">
+                    <h3>Noticia 2</h3>
+                    <p>Evento especial anunciado...</p>
+                    <div class="container">
                         <!-- Button to Open the Modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Noticia1">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Noticia2">
                             leer mas
                         </button>
 
                         <!-- The Modal -->
-                        <div class="modal" id="Noticia1">
+                        <div class="modal" id="Noticia2">
                             <div class="modal-dialog">
                                 <div class="modal-content">
 
@@ -163,16 +236,13 @@
 
                                     <!-- Modal body -->
                                     <div class="modal-body">
-                                        MrBeast ha lanzado recientemente varias novedades emocionantes relacionadas con
-                                        sus productos. Uno de los anuncios más destacados es la reformulación de sus
-                                        barras de chocolate Feastables. MrBeast afirmó que la nueva fórmula es "el
-                                        chocolate con mejor sabor jamás creado por la humanidad". Después de probar
-                                        cientos de recetas en diferentes fábricas de chocolate, finalmente encontró la
-                                        que considera perfecta. Ahora, Feastables ofrece siete sabores: Chocolate con
-                                        Leche, Crunch de Leche, Almendra, Mantequilla de Maní, Crunch de Mantequilla de
-                                        Maní, Chocolate Oscuro y Chocolate Oscuro con Sal Marina. Además, está llevando
-                                        a cabo una promoción donde regala $10,000 diarios a los compradores que escaneen
-                                        el código QR en las envolturas de Feastables​
+                                        MrBeast, el popular creador de YouTube, ha anunciado una nueva serie de
+                                        competencia de realidad llamada "Beast Games", que se estrenará en Prime
+                                        Video. Esta serie contará con 1,000 concursantes compitiendo por un premio
+                                        en efectivo de $5 millones, el mayor premio en la historia de la televisión
+                                        y el streaming. El espectáculo busca elevar las apuestas de las competencias
+                                        de realidad y mostrar el contenido de alta producción y ritmo rápido de
+                                        MrBeast en una plataforma global​
                                     </div>
 
                                     <!-- Modal footer -->
@@ -183,361 +253,51 @@
                                 </div>
                             </div>
                         </div>
-                    </article>
-                    <!-- Artículo 2 -->
-                    <article class="articulo">
-                        <h3>Noticia 2</h3>
-                        <p>Evento especial anunciado...</p>
-                        <div class="container">
-                            <!-- Button to Open the Modal -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Noticia2">
-                                leer mas
-                            </button>
-
-                            <!-- The Modal -->
-                            <div class="modal" id="Noticia2">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-
-                                        <!-- Modal Header -->
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">Modal Heading</h4>
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-
-                                        <!-- Modal body -->
-                                        <div class="modal-body">
-                                            MrBeast, el popular creador de YouTube, ha anunciado una nueva serie de
-                                            competencia de realidad llamada "Beast Games", que se estrenará en Prime
-                                            Video. Esta serie contará con 1,000 concursantes compitiendo por un premio
-                                            en efectivo de $5 millones, el mayor premio en la historia de la televisión
-                                            y el streaming. El espectáculo busca elevar las apuestas de las competencias
-                                            de realidad y mostrar el contenido de alta producción y ritmo rápido de
-                                            MrBeast en una plataforma global​
-                                        </div>
-
-                                        <!-- Modal footer -->
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-danger"
-                                                data-dismiss="modal">Cerrar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
 
-                        </div>
-                    </article>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de videos -->
+        <section id="videos" class="videos">
+            <h2>¡Videos mas recientes!</h2>
+            <div class="videos-grid">
+                <!-- Video 1 -->
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/F6PqxbvOCUI?si=3BBOiPNO_KL1DGGX"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h3>Video 1</h3>
                 </div>
-            </section>
-
-            <!-- Sección de videos -->
-            <section id="videos" class="videos">
-                <h2>¡Videos mas recientes!</h2>
-                <div class="videos-grid">
-                    <!-- Video 1 -->
-                    <div class="video">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/F6PqxbvOCUI?si=3BBOiPNO_KL1DGGX"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <h3>Video 1</h3>
-                    </div>
-                    <!-- Video 2 -->
-                    <div class="video">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/Pv0iVoSZzN8?si=a0os1OuS5y1-DFz5"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <h3>Video 2</h3>
-                    </div>
+                <!-- Video 2 -->
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Pv0iVoSZzN8?si=a0os1OuS5y1-DFz5"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h3>Video 2</h3>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Programa de afiliados -->
-            <section id="afiliados" class="afiliados">
-                <h2>Programa de Afiliados</h2>
-                <p>Únete a nuestro programa de afiliados y gana comisiones promocionando nuestros productos. ¡Es fácil y
-                    gratuito!</p>
-                <div class="container">
-                    <!-- Button to Open the Modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Afiliados">
-                        Mas informacion!
-                    </button>
-                    <div class="modal" tabindex="-1" id="Afiliados">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">1</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="col-md">
-                                        <div class="form-floating">
-                                            <label for="metodoPagoAfiliados">¡Unite al programa de afiliados de Mr
-                                                Beast!</label>
-                                            <select class="form-select" id="metodoPagoAfiliados">
-                                                <option selected>Selecciona tu metodo de pago</option>
-                                                <option value="1">transferencia</option>
-                                                <option value="2">Efectivo</option>
-                                                <option value="3">Tarjeta debito/credito</option>
-                                            </select>
-
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </section>
-
-            <!-- Calendario de eventos -->
-            <section id="eventos" class="eventos">
-                <h2>Calendario de Eventos</h2>
-                <div class="calendario">
-                    <p>Próximos eventos relacionados con Mr. Beast:</p>
-                    <!-- Evento 1 -->
-                    <div class="evento">
-                        <h3>Día de Impacto</h3>
-                        <p>Fecha: 01/06/2024</p>
-                        <p> Durante este evento, la marca invitaría a los seguidores de Mr. Beast a unirse en un
-                            esfuerzo colectivo para hacer una diferencia en sus comunidades locales.
-
-                            La jornada comenzaría con la distribución gratuita de camisetas exclusivas de Mr. Beast a
-                            todos los participantes, quienes luego se dividirían en equipos para llevar a cabo diversas
-                            actividades de servicio comunitario, como limpieza de parques, reparto de alimentos a
-                            personas necesitadas, embellecimiento de espacios públicos, entre otros.
-
-                            Cada equipo tendría asignadas tareas específicas y estaría acompañado por voluntarios y
-                            empleados de la marca, creando así una experiencia de colaboración y solidaridad única.
-                            Además, se podrían organizar actividades interactivas, como concursos de trivia sobre la
-                            filantropía de Mr. Beast, oportunidades para tomarse fotos con accesorios de la marca y la
-                            posibilidad de conocer a influencers asociados con la misma.
-
-                            Al final del día, todos los participantes se reunirían para celebrar los logros del evento,
-                            compartiendo historias y reflexiones sobre el impacto que lograron juntos.</p>
-                    </div>
-                    <!-- Evento 2 -->
-                    <div class="evento">
-                        <h3>Maratón de Generosidad</h3>
-                        <p>Fecha: 15/07/2024</p>
-                        <p>Durante este evento, la marca organizaría una jornada completa dedicada a la realización de
-                            actos de bondad y generosidad en diversas áreas de la ciudad.
-
-                            La jornada comenzaría con la formación de equipos, compuestos por seguidores de Mr. Beast,
-                            voluntarios y empleados de la marca, cada uno equipado con camisetas y accesorios de la
-                            marca. Luego, los equipos recibirían una serie de desafíos altruistas, como repartir comida
-                            a personas sin hogar, regalar productos de primera necesidad en refugios locales, o realizar
-                            pequeñas reparaciones en hogares de ancianos.
-
-                            A lo largo del día, los equipos recorrerían la ciudad cumpliendo con los desafíos,
-                            documentando sus acciones en redes sociales con el hashtag oficial del evento. Además, se
-                            establecerían puntos de encuentro estratégicos donde los participantes podrían recargar
-                            energías, compartir experiencias y disfrutar de actividades interactivas, como juegos y
-                            concursos relacionados con la filantropía.
-
-                            Al final del día, se organizaría una gran celebración en un lugar emblemático de la ciudad,
-                            donde se reconocería el esfuerzo y la dedicación de todos los participantes. Además, se
-                            invitaría a la comunidad a unirse a la fiesta, con música en vivo, comida gratuita y la
-                            oportunidad de conocer a Mr. Beast y otros influencers asociados con la marca.</p>
-                    </div>
-                </div>
-            </section>
-            <!-- Sección de colaboraciones y patrocinios -->
-            <section id="colaboraciones" class="colaboraciones">
-                <h2>Colaboraciones y Patrocinios</h2>
-                <p>Mr. Beast ha colaborado con varias marcas para traer productos exclusivos. Conoce más sobre estas
-                    colaboraciones.</p>
-                <div class="container">
-                    <div class="">
-                        <!-- Button to Open the Modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Colaboraciones">
-                            Ver mas
-                        </button>
-
-                        <!-- The Modal -->
-                        <div class="modal" id="Colaboraciones">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-
-                                    <!-- Modal Header -->
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">informacion</h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    </div>
-
-                                    <!-- Modal body -->
-                                    <div class="modal-body">
-                                        <div class="row g-2">
-                                            <div class="col-md">
-                                                <div class="form-floating">
-                                                    MrBeast ha tenido numerosos patrocinios y colaboraciones a lo largo
-                                                    de su carrera en YouTube. Aquí tienes una lista detallada de algunos
-                                                    de los más notables:
-
-                                                    Feastables: Lanzó su propia marca de chocolates, que luego se
-                                                    convirtió en patrocinador oficial de los Charlotte Hornets en la
-                                                    NBA, incluyendo sus equipos afiliados en la NBA G League y la NBA 2K
-                                                    League​ (NeoReach | Influencer Marketing Platform)​.
-
-                                                    MrBeast Burger: Creó una cadena de restaurantes virtuales que opera
-                                                    a través de cocinas fantasmas en diversas ubicaciones.
-
-                                                    Current: Ha promocionado esta empresa de tecnología financiera en
-                                                    varios de sus videos.
-
-                                                    Honey: Frecuentemente promociona esta extensión de navegador que
-                                                    ayuda a encontrar cupones y descuentos en compras en línea.
-
-                                                    Quidd: Una aplicación de coleccionables digitales que ha aparecido
-                                                    en algunos de sus videos.
-
-                                                    Shopify: Colaboró con esta plataforma de comercio electrónico,
-                                                    destacando su utilidad para crear tiendas en línea.
-
-                                                    Dragon City: Promocionó este popular juego móvil, integrándolo en
-                                                    sus contenidos.
-
-                                                    Moose Toys: Se asoció con esta empresa de juguetes para lanzar
-                                                    productos relacionados con su marca.
-
-                                                    Beast Philanthropy: A través de su canal dedicado a la filantropía,
-                                                    colabora con diversas organizaciones benéficas y recauda fondos para
-                                                    causas importantes.
-
-                                                    Estas colaboraciones y patrocinios han sido claves para el
-                                                    crecimiento de su marca y la financiación de sus grandes proyectos y
-                                                    desafíos en YouTube.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Modal footer -->
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-danger"
-                                                data-dismiss="modal">Cerrar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-            </section>
-
-            <!-- Sección de recomendaciones personalizadas -->
-            <section id="recomendaciones" class="recomendaciones">
-                <h2>Recomendaciones para Ti</h2>
-                <div class="recomendaciones-grid">
-                        <!-- Recomendación 1 -->
-                    <div class="recomendacion">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_712160-MLA53046510631_122022-O.webp"
-                            alt="Recomendación 1">
-                        <h3>Recomendación 1</h3>
-                        <p>Producto recomendado basado en tus intereses...</p>
-                        <!-- Button to Open the Modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Articulo1">
-                            Comprar Ahora
-                        </button>
-
-                        <!-- The Modal -->
-                        <div class="modal" id="Articulo1">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-
-                                    <!-- Modal Header -->
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">¡Compra Ahora!</h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    </div>
-
-                                    <!-- Modal body -->
-                                    <div class="modal-body">
-                                        <select class="form-select" id="metodoPagoArticulo1">
-                                            <option selected>Selecciona tu metodo de pago</option>
-                                            <option value="1">transferencia</option>
-                                            <option value="2">Efectivo</option>
-                                            <option value="3">Tarjeta debito/credito</option>
-                                        </select>
-                                    </div>
-
-                                    <!-- Modal footer -->
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger"
-                                            data-dismiss="modal">Cerrar</button>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        <!-- Recomendación 2 -->
-                    <div class="recomendacion">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/51wUsoZnwfL._AC_UL1000_.jpg"
-                            alt="Recomendación 2">
-                        <h3>Recomendación 2</h3>
-                        <p>Producto recomendado basado en tus intereses...</p>
-                        <!-- Button to Open the Modal -->
-                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Articulo2">
-                            Comprar Ahora
-                        </button>
-
-                        <!-- The Modal -->
-                        <div class="modal" id="Articulo2">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-
-                                    <!-- Modal Header -->
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">¡Compra Ahora!</h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    </div>
-
-                                    <!-- Modal body -->
-                                    <div class="modal-body">
-                                        Modal body..
-                                    </div>
-
-                                    <!-- Modal footer -->
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger"
-                                            data-dismiss="modal">Cerrar</button>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <!-- Sección de donaciones -->
-            <section id="donaciones" class="donaciones">
-                <h2>Donaciones para Causas Benéficas</h2>
-                <p>Apoya las causas benéficas que Mr. Beast respalda haciendo una donación.</p>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Donaciones">
-                    ¡Donar ahora!
+        <!-- Programa de afiliados -->
+        <section id="afiliados" class="afiliados">
+            <h2>Programa de Afiliados</h2>
+            <p>Únete a nuestro programa de afiliados y gana comisiones promocionando nuestros productos. ¡Es fácil y
+                gratuito!</p>
+            <div class="container">
+                <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Afiliados">
+                    Mas informacion!
                 </button>
-                <div class="modal" tabindex="-1" id="Donaciones">
+                <div class="modal" tabindex="-1" id="Afiliados">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">¡Ayuda a distintas personas del mundo!</h5>
+                                <h5 class="modal-title">1</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -545,10 +305,10 @@
                             <div class="modal-body">
                                 <div class="col-md">
                                     <div class="form-floating">
-                                        <label for="metodoDonacion">¡Dona a las causas beneficas que ayuda mr
-                                            beast!</label>
-                                        <select class="form-select" id="metodoDonacion">
-                                            <option selected>Selecciona tu metodo para donar</option>
+                                        <label for="metodoPagoAfiliados">¡Unite al programa de afiliados de Mr
+                                            Beast!</label>
+                                        <select class="form-select" id="metodoPagoAfiliados">
+                                            <option selected>Selecciona tu metodo de pago</option>
                                             <option value="1">transferencia</option>
                                             <option value="2">Efectivo</option>
                                             <option value="3">Tarjeta debito/credito</option>
@@ -566,71 +326,342 @@
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <!-- Sección de redes sociales en tiempo real -->
-            <section id="social" class="social" aria-label="Redes sociales oficiales de Mr. Beast">
-                <h2>Redes Sociales en Tiempo Real</h2>
-                <div id="social-feed">
-                    <!-- Aquí se mostrarán las publicaciones en tiempo real -->
-                    <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15" aria-hidden="true">
-                            <path fill="#E4405F"
-                                d="M465.1 0H46.9C21 0 0 21 0 46.9v418.2C0 491 21 512 46.9 512h418.2c25.9 0 46.9-21 46.9-46.9V46.9C512 21 491 0 465.1 0zM256 391.7c-73.7 0-133.7-60-133.7-133.7s60-133.7 133.7-133.7 133.7 60 133.7 133.7-60 133.7-133.7 133.7zm0-230c-50.4 0-91.3 40.9-91.3 91.3s40.9 91.3 91.3 91.3 91.3-40.9 91.3-91.3-40.9-91.3-91.3-91.3zM389.3 512H122.7c-20.8 0-37.7-16.9-37.7-37.7V208.4h56.5c-4.4 15.9-6.7 32.7-6.7 50 0 82.1 66.7 148.8 148.8 148.8s148.8-66.7 148.8-148.8c0-17.3-2.3-34.1-6.7-50h56.5v265.9c0 20.8-16.9 37.7-37.8 37.7z" />
-                        </svg>
-                        <a href="https://www.instagram.com/MrBeast/" target="_blank">Instagram</a>
-                    </p>
-                    <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15" aria-hidden="true">
-                            <path fill="#FF0000"
-                                d="M472.7 121.1c-5.5-20.7-20.7-36.1-41.4-41.4C397.7 64 256 64 256 64s-141.7 0-175.3 15.7c-20.7 5.5-36.1 20.7-41.4 41.4C32 154.7 32 256 32 256s0 101.3 15.7 134.9c5.5 20.7 20.7 36.1 41.4 41.4C114.7 448 256 448 256 448s141.7 0 175.3-15.7c20.7-5.5 36.1-20.7 41.4-41.4C480 357.3 480 256 480 256s0-101.3-15.3-134.9zm-280.7 180V210.8l146.9 75.2-146.9 74.9z" />
-                        </svg>
-                        <a href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA" target="_blank">YouTube</a>
-                    </p>
-                    <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15" aria-hidden="true">
-                            <path fill="#1877F2"
-                                d="M444.7 0H67.3C30.2 0 0 30.2 0 67.3v377.3C0 481.8 30.2 512 67.3 512h161.5V313.7h-69.3v-80.9h69.3v-60.6c0-70.8 43.3-109.5 106.2-109.5 30 0 56 2.3 63.5 3.3v73h-43.5c-34 0-40.7 16.2-40.7 39.9v52.3h81.3l-10.6 80.9h-70.7V512h138.7c37.1 0 67.3-30.2 67.3-67.3V67.3C512 30.2 481.8 0 444.7 0z" />
-                        </svg>
-                        <a href="https://www.facebook.com/MrBeast6000/" target="_blank">Facebook</a>
-                    </p>
-                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-twitter-x" viewBox="0 0 16 16">
-                            <path
-                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
-                        </svg> <a href="https://x.com/MrBeast" target="_blank">Twitter</a></p>
-                </div>
-            </section>
-            <!-- Sección de contacto -->
-            <section id="contacto" class="contacto">
-                <h2>Contacto</h2>
-                <form action="#">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre">
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje"></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-                <div class="info-contacto">
-                    <p>Email: contacto@mrbeastshop.com</p>
-                    <p>Teléfono: +1 234 567 890</p>
-                </div>
-            </section>
-        </main>
-        <!-- Pie de página -->
-        <footer class="container-fluid">
-                <nav>
-                    <ul>
-                        <li><a href="#">Política de privacidad</a></li>
-                        <li><a href="#">Términos y condiciones</a></li>
-                        <li><a href="#">Preguntas frecuentes</a></li>
-                    </ul>
-                </nav>
-                <p>&copy; 2024 Mr. Beast Shop. Todos los derechos reservados.</p>
-        </footer>
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+            </div>
+        </section>
+
+        <!-- Calendario de eventos -->
+        <section id="eventos" class="eventos">
+            <h2>Calendario de Eventos</h2>
+            <div class="calendario">
+                <p>Próximos eventos relacionados con Mr. Beast:</p>
+                <!-- Evento 1 -->
+                <div class="evento">
+                    <h3>Día de Impacto</h3>
+                    <p>Fecha: 01/06/2024</p>
+                    <p> Durante este evento, la marca invitaría a los seguidores de Mr. Beast a unirse en un
+                        esfuerzo colectivo para hacer una diferencia en sus comunidades locales.
+
+                        La jornada comenzaría con la distribución gratuita de camisetas exclusivas de Mr. Beast a
+                        todos los participantes, quienes luego se dividirían en equipos para llevar a cabo diversas
+                        actividades de servicio comunitario, como limpieza de parques, reparto de alimentos a
+                        personas necesitadas, embellecimiento de espacios públicos, entre otros.
+
+                        Cada equipo tendría asignadas tareas específicas y estaría acompañado por voluntarios y
+                        empleados de la marca, creando así una experiencia de colaboración y solidaridad única.
+                        Además, se podrían organizar actividades interactivas, como concursos de trivia sobre la
+                        filantropía de Mr. Beast, oportunidades para tomarse fotos con accesorios de la marca y la
+                        posibilidad de conocer a influencers asociados con la misma.
+
+                        Al final del día, todos los participantes se reunirían para celebrar los logros del evento,
+                        compartiendo historias y reflexiones sobre el impacto que lograron juntos.</p>
+                </div>
+                <!-- Evento 2 -->
+                <div class="evento">
+                    <h3>Maratón de Generosidad</h3>
+                    <p>Fecha: 15/07/2024</p>
+                    <p>Durante este evento, la marca organizaría una jornada completa dedicada a la realización de
+                        actos de bondad y generosidad en diversas áreas de la ciudad.
+
+                        La jornada comenzaría con la formación de equipos, compuestos por seguidores de Mr. Beast,
+                        voluntarios y empleados de la marca, cada uno equipado con camisetas y accesorios de la
+                        marca. Luego, los equipos recibirían una serie de desafíos altruistas, como repartir comida
+                        a personas sin hogar, regalar productos de primera necesidad en refugios locales, o realizar
+                        pequeñas reparaciones en hogares de ancianos.
+
+                        A lo largo del día, los equipos recorrerían la ciudad cumpliendo con los desafíos,
+                        documentando sus acciones en redes sociales con el hashtag oficial del evento. Además, se
+                        establecerían puntos de encuentro estratégicos donde los participantes podrían recargar
+                        energías, compartir experiencias y disfrutar de actividades interactivas, como juegos y
+                        concursos relacionados con la filantropía.
+
+                        Al final del día, se organizaría una gran celebración en un lugar emblemático de la ciudad,
+                        donde se reconocería el esfuerzo y la dedicación de todos los participantes. Además, se
+                        invitaría a la comunidad a unirse a la fiesta, con música en vivo, comida gratuita y la
+                        oportunidad de conocer a Mr. Beast y otros influencers asociados con la marca.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de colaboraciones y patrocinios -->
+        <section id="colaboraciones" class="colaboraciones">
+            <h2>Colaboraciones y Patrocinios</h2>
+            <p>Mr. Beast ha colaborado con varias marcas para traer productos exclusivos. Conoce más sobre estas
+                colaboraciones.</p>
+            <div class="container">
+                <div class="">
+                    <!-- Button to Open the Modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Colaboraciones">
+                        Ver mas
+                    </button>
+
+                    <!-- The Modal -->
+                    <div class="modal" id="Colaboraciones">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">informacion</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <div class="row g-2">
+                                        <div class="col-md">
+                                            <div class="form-floating">
+                                                MrBeast ha tenido numerosos patrocinios y colaboraciones a lo largo
+                                                de su carrera en YouTube. Aquí tienes una lista detallada de algunos
+                                                de los más notables:
+
+                                                Feastables: Lanzó su propia marca de chocolates, que luego se
+                                                convirtió en patrocinador oficial de los Charlotte Hornets en la
+                                                NBA, incluyendo sus equipos afiliados en la NBA G League y la NBA 2K
+                                                League​ (NeoReach | Influencer Marketing Platform)​.
+
+                                                MrBeast Burger: Creó una cadena de restaurantes virtuales que opera
+                                                a través de cocinas fantasmas en diversas ubicaciones.
+
+                                                Current: Ha promocionado esta empresa de tecnología financiera en
+                                                varios de sus videos.
+
+                                                Honey: Frecuentemente promociona esta extensión de navegador que
+                                                ayuda a encontrar cupones y descuentos en compras en línea.
+
+                                                Quidd: Una aplicación de coleccionables digitales que ha aparecido
+                                                en algunos de sus videos.
+
+                                                Shopify: Colaboró con esta plataforma de comercio electrónico,
+                                                destacando su utilidad para crear tiendas en línea.
+
+                                                Dragon City: Promocionó este popular juego móvil, integrándolo en
+                                                sus contenidos.
+
+                                                Moose Toys: Se asoció con esta empresa de juguetes para lanzar
+                                                productos relacionados con su marca.
+
+                                                Beast Philanthropy: A través de su canal dedicado a la filantropía,
+                                                colabora con diversas organizaciones benéficas y recauda fondos para
+                                                causas importantes.
+
+                                                Estas colaboraciones y patrocinios han sido claves para el
+                                                crecimiento de su marca y la financiación de sus grandes proyectos y
+                                                desafíos en YouTube.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+        </section>
+
+        <!-- Sección de recomendaciones personalizadas -->
+        <section id="recomendaciones" class="recomendaciones">
+            <h2>Recomendaciones para Ti</h2>
+            <div class="recomendaciones-grid">
+                <!-- Recomendación 1 -->
+                <div class="recomendacion">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_712160-MLA53046510631_122022-O.webp"
+                        alt="Recomendación 1">
+                    <h3>Recomendación 1</h3>
+                    <p>Producto recomendado basado en tus intereses...</p>
+                    <!-- Button to Open the Modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Articulo1">
+                        Comprar Ahora
+                    </button>
+
+                    <!-- The Modal -->
+                    <div class="modal" id="Articulo1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">¡Compra Ahora!</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <select class="form-select" id="metodoPagoArticulo1">
+                                        <option selected>Selecciona tu metodo de pago</option>
+                                        <option value="1">transferencia</option>
+                                        <option value="2">Efectivo</option>
+                                        <option value="3">Tarjeta debito/credito</option>
+                                    </select>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Recomendación 2 -->
+                <div class="recomendacion">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/51wUsoZnwfL._AC_UL1000_.jpg"
+                        alt="Recomendación 2">
+                    <h3>Recomendación 2</h3>
+                    <p>Producto recomendado basado en tus intereses...</p>
+                    <!-- Button to Open the Modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Articulo2">
+                        Comprar Ahora
+                    </button>
+
+                    <!-- The Modal -->
+                    <div class="modal" id="Articulo2">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">¡Compra Ahora!</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    Modal body..
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de donaciones -->
+        <section id="donaciones" class="donaciones">
+            <h2>Donaciones para Causas Benéficas</h2>
+            <p>Apoya las causas benéficas que Mr. Beast respalda haciendo una donación.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Donaciones">
+                ¡Donar ahora!
+            </button>
+            <div class="modal" tabindex="-1" id="Donaciones">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">¡Ayuda a distintas personas del mundo!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-md">
+                                <div class="form-floating">
+                                    <label for="metodoDonacion">¡Dona a las causas beneficas que ayuda mr
+                                        beast!</label>
+                                    <select class="form-select" id="metodoDonacion">
+                                        <option selected>Selecciona tu metodo para donar</option>
+                                        <option value="1">transferencia</option>
+                                        <option value="2">Efectivo</option>
+                                        <option value="3">Tarjeta debito/credito</option>
+                                    </select>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de redes sociales en tiempo real -->
+        <section id="social" class="social" aria-label="Redes sociales oficiales de Mr. Beast">
+            <h2>Redes Sociales en Tiempo Real</h2>
+            <div id="social-feed">
+                <!-- Aquí se mostrarán las publicaciones en tiempo real -->
+                <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15"
+                        aria-hidden="true">
+                        <path fill="#E4405F"
+                            d="M465.1 0H46.9C21 0 0 21 0 46.9v418.2C0 491 21 512 46.9 512h418.2c25.9 0 46.9-21 46.9-46.9V46.9C512 21 491 0 465.1 0zM256 391.7c-73.7 0-133.7-60-133.7-133.7s60-133.7 133.7-133.7 133.7 60 133.7 133.7-60 133.7-133.7 133.7zm0-230c-50.4 0-91.3 40.9-91.3 91.3s40.9 91.3 91.3 91.3 91.3-40.9 91.3-91.3-40.9-91.3-91.3-91.3zM389.3 512H122.7c-20.8 0-37.7-16.9-37.7-37.7V208.4h56.5c-4.4 15.9-6.7 32.7-6.7 50 0 82.1 66.7 148.8 148.8 148.8s148.8-66.7 148.8-148.8c0-17.3-2.3-34.1-6.7-50h56.5v265.9c0 20.8-16.9 37.7-37.8 37.7z" />
+                    </svg>
+                    <a href="https://www.instagram.com/MrBeast/" target="_blank">Instagram</a>
+                </p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15"
+                        aria-hidden="true">
+                        <path fill="#FF0000"
+                            d="M472.7 121.1c-5.5-20.7-20.7-36.1-41.4-41.4C397.7 64 256 64 256 64s-141.7 0-175.3 15.7c-20.7 5.5-36.1 20.7-41.4 41.4C32 154.7 32 256 32 256s0 101.3 15.7 134.9c5.5 20.7 20.7 36.1 41.4 41.4C114.7 448 256 448 256 448s141.7 0 175.3-15.7c20.7-5.5 36.1-20.7 41.4-41.4C480 357.3 480 256 480 256s0-101.3-15.3-134.9zm-280.7 180V210.8l146.9 75.2-146.9 74.9z" />
+                    </svg>
+                    <a href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA" target="_blank">YouTube</a>
+                </p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15"
+                        aria-hidden="true">
+                        <path fill="#1877F2"
+                            d="M444.7 0H67.3C30.2 0 0 30.2 0 67.3v377.3C0 481.8 30.2 512 67.3 512h161.5V313.7h-69.3v-80.9h69.3v-60.6c0-70.8 43.3-109.5 106.2-109.5 30 0 56 2.3 63.5 3.3v73h-43.5c-34 0-40.7 16.2-40.7 39.9v52.3h81.3l-10.6 80.9h-70.7V512h138.7c37.1 0 67.3-30.2 67.3-67.3V67.3C512 30.2 481.8 0 444.7 0z" />
+                    </svg>
+                    <a href="https://www.facebook.com/MrBeast6000/" target="_blank">Facebook</a>
+                </p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-twitter-x" viewBox="0 0 16 16">
+                        <path
+                            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                    </svg> <a href="https://x.com/MrBeast" target="_blank">Twitter</a></p>
+            </div>
+        </section>
+        <!-- Sección de contacto -->
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <form action="#">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="info-contacto">
+                <p>Email: contacto@mrbeastshop.com</p>
+                <p>Teléfono: +1 234 567 890</p>
+            </div>
+        </section>
+    </main>
+    <!-- Pie de página -->
+    <button id="backToTop" class="back-to-top" type="button">↑</button>
+
+    <footer class="container-fluid">
+        <nav>
+            <ul>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Mr. Beast Shop. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
