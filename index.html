@@ -12,12 +12,17 @@
 &#10;
 
 <body>
+    <a href="#mainContent" class="skip-link">Saltar al contenido principal</a>
     <!-- Encabezado -->
     <header>
         <div class="logo">
             <img src="https://logos-marcas.com/wp-content/uploads/2021/09/MrBeast-Logo.png" alt="Logo de MrBeast">
             <h1>Tributo a MrBeast</h1>
         </div>
+            <button id="menuToggle" class="menu-toggle" type="button" aria-label="Abrir o cerrar menú de navegación"
+                aria-expanded="false">
+                ☰
+            </button>
         <nav aria-label="Navegación principal">
             <ul>
                 <li><a href="#hero">Inicio</a></li>
@@ -25,16 +30,22 @@
                 <li><a href="#biografia">Historia</a></li>
                 <li><a href="#impacto">Impacto</a></li>
                 <li><a href="#videos">Videos</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+                <li><a href="#quiz">Quiz</a></li>
                 <li><a href="#donaciones">Donar</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
         <button id="themeToggle" class="theme-toggle" type="button">Modo oscuro</button>
+        <div class="font-size-controls" aria-label="Controles de tamaño de texto">
+            <button id="fontSizeDecrease" class="font-size-toggle" type="button" aria-label="Reducir tamaño de texto">A-</button>
+            <button id="fontSizeIncrease" class="font-size-toggle" type="button" aria-label="Aumentar tamaño de texto">A+</button>
+        </div>
     </header>
-    <main>
-        <section id="hero" class="hero">
+    <main id="mainContent">
+        <section id="hero" class="hero" aria-labelledby="hero-title">
             <div class="hero-content">
-                <h2>Videos extremos, retos imposibles e impacto real</h2>
+                <h2 id="hero-title">Videos extremos, retos imposibles e impacto real</h2>
                 <p>Este sitio celebra la creatividad, la locura y la generosidad de uno de los creadores más influyentes del mundo.</p>
                 <div class="hero-actions">
                     <a href="#videos" class="btn-cta">Ver videos épicos</a>
@@ -59,8 +70,8 @@
                 <iframe src="https://www.youtube.com/embed/F6PqxbvOCUI" title="MrBeast video destacado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
-        <section id="productos" class="productos-destacados">
-            <h2>Productos Destacados</h2>
+        <section id="productos" class="productos-destacados" aria-labelledby="productos-titulo">
+            <h2 id="productos-titulo">Productos Destacados</h2>
             <div class="productos-grid">
                 <div id="carouselProductos" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
@@ -68,7 +79,7 @@
                         <div class="carousel-item active">
                             <div class="d-block w-100">
                                 <img src="https://http2.mlstatic.com/D_NQ_NP_906313-MLM72186299945_102023-O.webp"
-                                    class="d-block w-100" alt="Producto 1">
+                                    class="d-block w-100" alt="Buzo negro de MrBeast con logo clásico">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5></h5>
                                     <p></p>
@@ -79,7 +90,7 @@
                         <div class="carousel-item">
                             <div class="d-block w-100">
                                 <img src="https://th.bing.com/th/id/OIP.5AzErkIUtPsviij3UqV5wAHaHa?rs=1&pid=ImgDetMain"
-                                    class="d-block w-100" alt="Producto 2">
+                                    class="d-block w-100" alt="Gorra azul de MrBeast con logo bordado">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5></h5>
                                     <p></p>
@@ -90,7 +101,7 @@
                         <div class="carousel-item">
                             <div class="d-block w-100">
                                 <img src="https://th.bing.com/th/id/OIP.6sAgG2Yhxfjc4NYKhWcIKQHaHa?rs=1&pid=ImgDetMain"
-                                    class="d-block w-100" alt="Producto 3">
+                                    class="d-block w-100" alt="Remera celeste inspirada en el canal de MrBeast">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5></h5>
                                     <p></p>
@@ -101,7 +112,7 @@
                         <div class="carousel-item">
                             <div class="d-block w-100">
                                 <img src="https://http2.mlstatic.com/D_NQ_NP_712160-MLA53046510631_122022-O.webp"
-                                    class="d-block w-100" alt="Producto 4">
+                                    class="d-block w-100" alt="Sudadera con estampado de Beast">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5></h5>
                                     <p></p>
@@ -112,7 +123,7 @@
                         <div class="carousel-item">
                             <div class="d-block w-100">
                                 <img src="https://images-na.ssl-images-amazon.com/images/I/51wUsoZnwfL._AC_UL1000_.jpg"
-                                    class="d-block w-100" alt="Producto 5">
+                                    class="d-block w-100" alt="Buzo rosa de MrBeast edición especial">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5></h5>
                                     <p></p>
@@ -132,8 +143,8 @@
             </div>
         </section>
         <!-- Sección de biografía -->
-        <section id="biografia" class="biografia">
-            <h2>Sobre Mr. Beast</h2>
+        <section id="biografia" class="biografia" aria-labelledby="biografia-titulo">
+            <h2 id="biografia-titulo">Sobre Mr. Beast</h2>
             <p>Mr. Beast, cuyo nombre real es Jimmy Donaldson, es un fenómeno de las redes sociales, empresario y
                 filántropo estadounidense nacido el 7 de mayo de 1998 en Greenville, Carolina del Norte. Desde una
                 edad temprana, mostró una inclinación hacia la innovación y el emprendimiento, que se manifestó en
@@ -167,9 +178,36 @@
                 poder del altruismo y el impacto positivo que cada uno puede tener en el mundo.</p>
         </section>
 
+        <section id="timeline" class="timeline" aria-labelledby="timeline-titulo">
+            <h2 id="timeline-titulo">Hitos del canal de MrBeast</h2>
+            <div class="timeline-line"></div>
+            <div class="timeline-items">
+                <article class="timeline-item">
+                    <span class="timeline-year">2012</span>
+                    <h3>Inicio del canal</h3>
+                    <p>Jimmy abre su canal de YouTube y comienza subiendo gameplays y pequeños experimentos.</p>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-year">2017</span>
+                    <h3>Primeros virales</h3>
+                    <p>Videos extremos como contar hasta 100.000 y donar grandes sumas lo convierten en tendencia mundial.</p>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-year">2019</span>
+                    <h3>Team Trees</h3>
+                    <p>Junto a la comunidad y otras figuras logra financiar la plantación de millones de árboles.</p>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-year">2021</span>
+                    <h3>Team Seas y expansión</h3>
+                    <p>Amplía su impacto con nuevos proyectos benéficos y negocios como Feastables y Beast Burger.</p>
+                </article>
+            </div>
+        </section>
+
         <!-- Blog de noticias y actualizaciones -->
-        <section id="blog" class="blog">
-            <h2>Blog de Noticias y Actualizaciones</h2>
+        <section id="blog" class="blog" aria-labelledby="blog-titulo">
+            <h2 id="blog-titulo">Blog de Noticias y Actualizaciones</h2>
             <div class="articulos-grid">
                 <!-- Artículo 1 -->
                 <article class="articulo">
@@ -261,8 +299,9 @@
         </section>
 
         <!-- Sección de videos -->
-        <section id="videos" class="videos">
-            <h2>¡Videos mas recientes!</h2>
+        <section id="videos" class="videos" aria-labelledby="videos-titulo">
+            <h2 id="videos-titulo">¡Videos más recientes!</h2>
+            <button id="randomVideo" class="btn btn-secondary random-video-btn" type="button">Reproducir video aleatorio</button>
             <div class="videos-grid">
                 <!-- Video 1 -->
                 <div class="video">
@@ -284,8 +323,8 @@
         </section>
 
         <!-- Programa de afiliados -->
-        <section id="afiliados" class="afiliados">
-            <h2>Programa de Afiliados</h2>
+        <section id="afiliados" class="afiliados" aria-labelledby="afiliados-titulo">
+            <h2 id="afiliados-titulo">Programa de Afiliados</h2>
             <p>Únete a nuestro programa de afiliados y gana comisiones promocionando nuestros productos. ¡Es fácil y
                 gratuito!</p>
             <div class="container">
@@ -333,8 +372,8 @@
         </section>
 
         <!-- Calendario de eventos -->
-        <section id="eventos" class="eventos">
-            <h2>Calendario de Eventos</h2>
+        <section id="eventos" class="eventos" aria-labelledby="eventos-titulo">
+            <h2 id="eventos-titulo">Calendario de Eventos</h2>
             <div class="calendario">
                 <p>Próximos eventos relacionados con Mr. Beast:</p>
                 <!-- Evento 1 -->
@@ -385,8 +424,8 @@
             </div>
         </section>
         <!-- Sección de colaboraciones y patrocinios -->
-        <section id="colaboraciones" class="colaboraciones">
-            <h2>Colaboraciones y Patrocinios</h2>
+        <section id="colaboraciones" class="colaboraciones" aria-labelledby="colaboraciones-titulo">
+            <h2 id="colaboraciones-titulo">Colaboraciones y Patrocinios</h2>
             <p>Mr. Beast ha colaborado con varias marcas para traer productos exclusivos. Conoce más sobre estas
                 colaboraciones.</p>
             <div class="container">
@@ -467,13 +506,13 @@
         </section>
 
         <!-- Sección de recomendaciones personalizadas -->
-        <section id="recomendaciones" class="recomendaciones">
-            <h2>Recomendaciones para Ti</h2>
+        <section id="recomendaciones" class="recomendaciones" aria-labelledby="recomendaciones-titulo">
+            <h2 id="recomendaciones-titulo">Recomendaciones para Ti</h2>
             <div class="recomendaciones-grid">
                 <!-- Recomendación 1 -->
                 <div class="recomendacion">
                     <img src="https://http2.mlstatic.com/D_NQ_NP_712160-MLA53046510631_122022-O.webp"
-                        alt="Recomendación 1">
+                        alt="Sudadera recomendada de Beast Merch">
                     <h3>Recomendación 1</h3>
                     <p>Producto recomendado basado en tus intereses...</p>
                     <!-- Button to Open the Modal -->
@@ -514,7 +553,7 @@
                 <!-- Recomendación 2 -->
                 <div class="recomendacion">
                     <img src="https://images-na.ssl-images-amazon.com/images/I/51wUsoZnwfL._AC_UL1000_.jpg"
-                        alt="Recomendación 2">
+                        alt="Buzo rosa recomendado para fans de MrBeast">
                     <h3>Recomendación 2</h3>
                     <p>Producto recomendado basado en tus intereses...</p>
                     <!-- Button to Open the Modal -->
@@ -552,9 +591,14 @@
         </section>
 
         <!-- Sección de donaciones -->
-        <section id="donaciones" class="donaciones">
-            <h2>Donaciones para Causas Benéficas</h2>
+        <section id="donaciones" class="donaciones" aria-labelledby="donaciones-titulo">
+            <h2 id="donaciones-titulo">Donaciones para Causas Benéficas</h2>
             <p>Apoya las causas benéficas que Mr. Beast respalda haciendo una donación.</p>
+            <div class="donacion-simulador">
+                <label for="donationRange">Elige un monto aproximado para donar:</label>
+                <input type="range" id="donationRange" min="5" max="1000" step="5">
+                <p id="donationImpact" class="donation-impact"></p>
+            </div>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Donaciones">
                 ¡Donar ahora!
             </button>
@@ -593,7 +637,140 @@
             </div>
         </section>
 
-        <!-- Sección de redes sociales en tiempo real -->
+        <section id="impacto" class="impacto" aria-labelledby="impacto-titulo">
+            <h2 id="impacto-titulo">Impacto y proyectos benéficos</h2>
+            <p>MrBeast ha financiado miles de cirugías, plantado millones de árboles y donado millones de dólares a personas y organizaciones alrededor del mundo. Esta sección celebra ese impacto.</p>
+            <div class="impacto-metricas">
+                <div class="impacto-metrica">
+                    <span class="impacto-label">Árboles plantados (Team Trees)</span>
+                    <div class="impacto-barra">
+                        <div class="impacto-barra-progreso" data-total="20000000" data-valor="20000000"></div>
+                    </div>
+                    <span class="impacto-valor">20,000,000</span>
+                </div>
+                <div class="impacto-metrica">
+                    <span class="impacto-label">Comidas repartidas (Team Seas y más)</span>
+                    <div class="impacto-barra">
+                        <div class="impacto-barra-progreso" data-total="100000000" data-valor="75000000"></div>
+                    </div>
+                    <span class="impacto-valor">75,000,000</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="curiosidades" class="curiosidades" aria-labelledby="curiosidades-titulo">
+            <h2 id="curiosidades-titulo">Datos curiosos de MrBeast</h2>
+            <div class="curiosidades-grid">
+                <article class="curiosidad">
+                    <h3>El video que cambió todo</h3>
+                    <p>Uno de sus primeros grandes virales fue cuando contó hasta 100.000, demostrando su compromiso con ideas simples pero extremas.</p>
+                </article>
+                <article class="curiosidad">
+                    <h3>Obsesión por el algoritmo</h3>
+                    <p>MrBeast estudia miniaturas, títulos y retención de audiencia como si fuera una ciencia exacta para maximizar cada upload.</p>
+                </article>
+                <article class="curiosidad">
+                    <h3>Reinversión total</h3>
+                    <p>Durante años reinvirtió prácticamente todo lo que ganaba en videos aún más grandes, creando un círculo de crecimiento enorme.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="quiz" class="quiz" aria-labelledby="quiz-titulo">
+            <h2 id="quiz-titulo">¿Cuánto sabes de MrBeast?</h2>
+            <form id="quizForm" class="quiz-form">
+                <fieldset>
+                    <legend>¿Cuál de estos proyectos benéficos lanzó junto a la comunidad?</legend>
+                    <div class="quiz-options">
+                        <label>
+                            <input type="radio" name="quizQuestion" value="incorrect_teamwater">
+                            Team Water
+                        </label>
+                        <label>
+                            <input type="radio" name="quizQuestion" value="correct">
+                            Team Trees
+                        </label>
+                        <label>
+                            <input type="radio" name="quizQuestion" value="incorrect_teamfire">
+                            Team Fire
+                        </label>
+                    </div>
+                </fieldset>
+                <button type="submit" id="quizSubmit" class="btn btn-primary">Comprobar respuesta</button>
+                <p id="quizResult" class="quiz-result" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section id="faq" class="faq" aria-labelledby="faq-titulo">
+            <h2 id="faq-titulo">Preguntas frecuentes</h2>
+            <div id="faqAccordion">
+                <div class="card">
+                    <div class="card-header" id="faqHeadingOne">
+                        <h3>
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faqOne"
+                                aria-expanded="true" aria-controls="faqOne">
+                                ¿MrBeast dona realmente el dinero que muestra en sus videos?
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="faqOne" class="collapse show" aria-labelledby="faqHeadingOne"
+                        data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Sí, gran parte del dinero que aparece en los videos es donado a personas reales, causas benéficas o proyectos sociales documentados en su contenido.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faqHeadingTwo">
+                        <h3>
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                                ¿Cómo puede financiar retos tan grandes?
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="faqTwo" class="collapse" aria-labelledby="faqHeadingTwo" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            A través de ingresos por YouTube, patrocinios de marcas, negocios como Beast Burger y Feastables, y reinvirtiendo constantemente en nuevos proyectos.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faqHeadingThree">
+                        <h3>
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                                ¿Puedo participar en alguno de sus retos?
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="faqThree" class="collapse" aria-labelledby="faqHeadingThree" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            En algunos videos invita a seguidores a participar. La mejor forma de enterarte es seguirlo en redes y estar atento a sus anuncios.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fans" class="fans" aria-labelledby="fans-titulo">
+            <h2 id="fans-titulo">Lo que dice la comunidad</h2>
+            <div class="fans-grid">
+                <article class="fan-opinion">
+                    <p>“MrBeast me inspiró a organizar donaciones en mi barrio. Si él puede hacerlo a gran escala, nosotros también podemos ayudar localmente.”</p>
+                    <span class="fan-nombre">Luca, 19 años</span>
+                </article>
+                <article class="fan-opinion">
+                    <p>“Sus videos me recuerdan que el contenido puede ser entretenido y al mismo tiempo cambiar vidas.”</p>
+                    <span class="fan-nombre">Sofía, 22 años</span>
+                </article>
+                <article class="fan-opinion">
+                    <p>“Gracias a sus retos aprendí de finanzas, riesgo y creatividad más que en cualquier clase.”</p>
+                    <span class="fan-nombre">Mateo, 17 años</span>
+                </article>
+            </div>
+        </section>
+
         <section id="social" class="social" aria-label="Redes sociales oficiales de Mr. Beast">
             <h2>Redes Sociales en Tiempo Real</h2>
             <div id="social-feed">
@@ -627,15 +804,16 @@
             </div>
         </section>
         <!-- Sección de contacto -->
-        <section id="contacto" class="contacto">
-            <h2>Contacto</h2>
+        <section id="contacto" class="contacto" aria-labelledby="contacto-titulo">
+            <h2 id="contacto-titulo">Contacto</h2>
             <form action="#">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre">
                 <label for="email">Correo electrónico:</label>
                 <input type="email" id="email" name="email">
                 <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje"></textarea>
+                <textarea id="mensaje" name="mensaje" maxlength="500"></textarea>
+                <small id="mensajeContador" class="message-counter" aria-live="polite"></small>
                 <button type="submit">Enviar</button>
             </form>
             <div class="info-contacto">
@@ -656,6 +834,7 @@
             </ul>
         </nav>
         <p>&copy; 2024 Mr. Beast Shop. Todos los derechos reservados.</p>
+        <p id="visitCounter" class="visit-counter"></p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

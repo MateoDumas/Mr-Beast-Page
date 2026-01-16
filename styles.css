@@ -67,6 +67,22 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
+header nav ul li a.active {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.menu-toggle {
+    display: none;
+    background-color: rgba(15, 23, 42, 0.85);
+    color: #f9fafb;
+    border: none;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
 .theme-toggle {
     background-color: #111827;
     color: #f9fafb;
@@ -75,6 +91,27 @@ header nav ul li a:hover {
     border-radius: 999px;
     font-size: 0.9rem;
     cursor: pointer;
+}
+
+.font-size-controls {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.font-size-toggle {
+    background-color: rgba(15, 23, 42, 0.85);
+    color: #f9fafb;
+    border: none;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+body.dark-theme .font-size-toggle {
+    background-color: #e5e7eb;
+    color: #020617;
 }
 
 body.dark-theme .theme-toggle {
@@ -160,6 +197,87 @@ body.dark-theme .stat-number {
     width: 100%;
     border-radius: 1rem;
     box-shadow: 0 20px 40px rgba(15, 23, 42, 0.3);
+}
+
+.impacto {
+    background-color: #ffffff;
+    padding: 2.5rem 1.5rem;
+    margin-top: 2rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+.impacto-metricas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.impacto-metrica {
+    text-align: left;
+}
+
+.impacto-label {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.impacto-barra {
+    background-color: #e5e7eb;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.impacto-barra-progreso {
+    height: 10px;
+    width: 0;
+    background: linear-gradient(90deg, #0ea5e9, #22c55e);
+    transition: width 1.5s ease-out;
+}
+
+.impacto-valor {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.timeline {
+    background-color: #fff;
+    padding: 2.5rem 1.5rem;
+    margin-top: 2rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+.timeline-line {
+    position: relative;
+    width: 4px;
+    background-color: #e5e7eb;
+    margin: 2rem auto;
+    height: 260px;
+}
+
+.timeline-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.timeline-item {
+    background-color: #f9fafb;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+    text-align: left;
+}
+
+.timeline-year {
+    display: inline-block;
+    font-weight: 700;
+    color: #0ea5e9;
+    margin-bottom: 0.5rem;
 }
 
 .productos-destacados {
@@ -258,6 +376,11 @@ body.dark-theme .stat-number {
     height: 250px;
 }
 
+.video-highlight {
+    box-shadow: 0 0 0 3px #0ea5e9, 0 12px 30px rgba(15, 23, 42, 0.4);
+    border-radius: 1rem;
+}
+
 .afiliados {
     background-color: #fff;
     padding: 2rem;
@@ -314,6 +437,27 @@ footer {
     color: white;
     padding: 1.5rem 0;
     text-align: center;
+}
+
+.visit-counter {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: #e5e7eb;
+}
+
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: 0.5rem;
+    background-color: #0f172a;
+    color: #f9fafb;
+    padding: 0.5rem 1rem;
+    z-index: 100;
+    border-radius: 999px;
+}
+
+.skip-link:focus {
+    left: 0.5rem;
 }
 
 footer nav ul {
@@ -382,6 +526,16 @@ footer nav ul li a {
     margin-top: 2rem;
 }
 
+.curiosidades,
+.quiz,
+.faq,
+.fans {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
 .juegos button, .tutoriales a, .colaboraciones button, .recomendaciones button, .donaciones button, .educacion a {
     background-color: #00bfff;
     border: none;
@@ -401,6 +555,13 @@ footer nav ul li a {
     flex-wrap: wrap;
 }
 
+.curiosidades-grid,
+.fans-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .tutorial, .recurso {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -408,6 +569,18 @@ footer nav ul li a {
     width: 45%;
     margin: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.curiosidad,
+.fan-opinion {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1.2rem;
+    width: 30%;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-radius: 0.75rem;
 }
 
 .tutorial a, .recurso a {
@@ -454,6 +627,52 @@ footer nav ul li a {
     color: #ddd;
 }
 
+.fan-nombre {
+    display: block;
+    margin-top: 0.75rem;
+    font-weight: 600;
+}
+
+.quiz-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.quiz-result {
+    margin-top: 0.75rem;
+    font-weight: 500;
+}
+
+.quiz-result-success {
+    color: #16a34a;
+}
+
+.quiz-result-error {
+    color: #dc2626;
+}
+
+.quiz-result-warning {
+    color: #ca8a04;
+}
+
+.donacion-simulador {
+    max-width: 480px;
+    margin: 1rem auto 2rem;
+}
+
+.donation-impact {
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
 .back-to-top {
     position: fixed;
     right: 1.5rem;
@@ -497,6 +716,15 @@ h1 {
 .logo {
     animation: slideDown 1s ease forwards;
 }
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid #0ea5e9;
+    outline-offset: 2px;
+}
 /* Animación de zoom en los productos destacados */
 .card:hover {
     transform: scale(1.05);
@@ -523,6 +751,10 @@ h1 {
     animation: slideUp 1s ease forwards;
 }
 
+.random-video-btn {
+    margin-bottom: 1rem;
+}
+
 @keyframes slideUp {
     0% {
         opacity: 0;
@@ -537,6 +769,17 @@ h1 {
 .btn-primary:hover {
     transform: scale(1.03);
     transition: transform 0.2s ease;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @keyframes spin {
@@ -621,9 +864,20 @@ button[type="submit"]:hover {
         padding-inline: 1rem;
     }
 
+    .menu-toggle {
+        display: inline-block;
+    }
+
     header nav ul {
         flex-wrap: wrap;
         justify-content: center;
+        display: none;
+        width: 100%;
+        margin-top: 0.75rem;
+    }
+
+    header.nav-open nav ul {
+        display: flex;
     }
 
     .hero {
