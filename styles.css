@@ -1,0 +1,505 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    background-color: #00bfff;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.productos-destacados {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.productos-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.producto {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 30%;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 100%;
+}
+
+.producto button {
+    background-color: #00bfff;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.producto button:hover {
+    background-color: #007acc;
+}
+
+.biografia {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.blog {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.articulos-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.articulo {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 45%;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.articulo a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+.articulo a:hover {
+    text-decoration: underline;
+}
+
+.videos {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.videos-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.video {
+    width: 45%;
+    margin: 1rem;
+}
+
+.video iframe {
+    width: 100%;
+    height: 250px;
+}
+
+.afiliados {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.afiliados button {
+    background-color: #00bfff;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.afiliados button:hover {
+    background-color: #007acc;
+}
+
+.eventos {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.calendario {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-top: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.evento {
+    margin-bottom: 1rem;
+}
+
+.redes-sociales {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.redes-sociales .iconos a {
+    margin: 0 10px;
+}
+
+.redes-sociales .iconos img {
+    width: 50px;
+}
+
+footer {
+    background-color: #00bfff;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.chat-en-vivo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00bfff;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#chat-btn {
+    background-color: #00bfff;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#chat-box {
+    display: none;
+    background-color: #fff;
+    color: #000;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+#chat-box textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 1rem;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+}
+
+#chat-box button {
+    background-color: #00bfff;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+
+.juegos, .tutoriales, .colaboraciones, .recomendaciones, .donaciones, .social, .educacion {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.juegos button, .tutoriales a, .colaboraciones button, .recomendaciones button, .donaciones button, .educacion a {
+    background-color: #00bfff;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.juegos button:hover, .tutoriales a:hover, .colaboraciones button:hover, .recomendaciones button:hover, .donaciones button:hover, .educacion a:hover {
+    background-color: #007acc;
+}
+
+.tutoriales-grid, .recursos-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tutorial, .recurso {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 45%;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tutorial a, .recurso a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+.tutorial a:hover, .recurso a:hover {
+    text-decoration: underline;
+}
+
+.recomendaciones-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.recomendacion {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 45%;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recomendacion img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.recomendacion button {
+    background-color: #00bfff;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.recomendacion button:hover {
+    background-color: #007acc;
+    color: #ddd;
+}
+/* Animación de desplazamiento hacia abajo */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Aplicar animación al título */
+h1 {
+    animation: slideDown 1s ease forwards;
+}
+
+/* Aplicar animación al logotipo */
+.logo {
+    animation: slideDown 1s ease forwards;
+}
+/* Animación de zoom en los productos destacados */
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+/* Animación de desvanecimiento en los artículos del blog */
+.card {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* Animación de desplazamiento hacia arriba en los videos */
+.video {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Animación de giro en el botón de "Más información" */
+.btn-primary:hover {
+    transform: scale(1.03);
+    transition: transform 0.2s ease;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* Animación de cambio de color al pasar el cursor sobre el botón "Enviar" */
+button[type="submit"]:hover {
+    animation: colorChange 0.5s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #007bff;
+    }
+    100% {
+        background-color: #00bfff;
+    }
+}
+/* Estilos para los Filtros de Búsqueda en la Barra de Navegación */
+.navbar {
+    padding-bottom: 0;
+}
+
+.form-inline {
+    margin-top: 10px; /* Espacio entre la barra de navegación y los filtros */
+}
+
+/* Estilos para los Selectores de Categoría y Precio */
+.form-control {
+    margin-right: 5px; /* Espacio entre los selectores */
+}
+
+/* Estilos para el Botón de Búsqueda */
+.btn-outline-success {
+    margin-left: 5px; /* Espacio entre los selectores y el botón */
+}
+
+/* Estilos para el botón de búsqueda en dispositivos móviles */
+@media (max-width: 767.98px) {
+    .form-inline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-control {
+        margin-bottom: 5px;
+    }
+
+    .btn-outline-success {
+        margin-top: 5px;
+    }
+}
+.carousel-item img {
+    height: 40vh;/*esto achica las img ponele el que mas te guste*/
+    object-fit: contain;/*Esto hace que la img este contenida dentro del container, para que no se vaya y te agrande todo*/
+    margin: auto;
+    color: #000;
+}
+
+
+/*Esto ponelo para que el fondo de carrousel sea blanco*/
+.carousel{
+    background-color: rgb(255, 255, 255);
+    color: #000;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    color: #00000000;
+}
+
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .producto,
+    .articulo,
+    .video,
+    .recomendacion,
+    .tutorial,
+    .recurso {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .videos-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recomendaciones-grid,
+    .articulos-grid,
+    .tutoriales-grid,
+    .recursos-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video iframe {
+        height: 200px;
+    }
+
+    .carousel-item img {
+        height: 30vh;
+    }
+}
